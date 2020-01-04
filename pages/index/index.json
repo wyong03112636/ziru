@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "cb":"/pages/component-b/component-b"
+  }
+  
+}

@@ -1,0 +1,15 @@
+module.exports=Behavior({
+  data:{
+    name:'lzx',
+    num:{
+      x:1,
+      y:1,
+      a:{b:11}
+    }
+  },
+  methods:{
+    play:function(){
+      console.log('play')
+    }
+  }
+})

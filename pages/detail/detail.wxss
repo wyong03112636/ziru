@@ -1,0 +1,11 @@
+/* pages/detail/detail.wxss */
+#item-0{
+  width: 200px;
+  height:200px;
+  background: #cfc;
+}
+#item-1{
+  width: 200rpx;
+  height:200rpx;
+  background: #ccf;
+}
