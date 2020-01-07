@@ -1,0 +1,8 @@
+/* components/list-comp/list-detailList/list-detailList.wxss */
+.detail{
+  margin-bottom: 36rpx;
+}
+.detailsimg{
+  width: 220rpx;
+  height: 164rpx;
+}

@@ -2,6 +2,7 @@
   "component": true,
   "usingComponents": {
     "list-headNav":"./list-headNav/list-headNav",
-    "list-detailNav":"./list-detailNav/list-detailNav"
+    "list-detailNav":"./list-detailNav/list-detailNav",
+    "list-detailList":"./list-detailList/list-detailList"
   }
 }

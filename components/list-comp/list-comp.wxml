@@ -2,4 +2,5 @@
 <view>
 <list-headNav></list-headNav>
 <list-detailNav></list-detailNav>
+<list-detailList></list-detailList>
 </view>

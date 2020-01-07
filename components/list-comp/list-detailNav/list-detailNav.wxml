@@ -1,8 +1,6 @@
 <!--components/list-comp/list-detailNav/list-detailNav.wxml-->
 <view class="dnav-wrap">
-  <view class="option1 option" bindtap="handChoice">深呼吸</view>
-  <view class="option" bindtap="handChoice">限时特惠</view>
-  <view class="option" bindtap="handChoice">非首次出租</view>
-  <view class="option" bindtap="handChoice">VR看房</view>
-  <view class="option" bindtap="handChoice">视频看房</view>
+  <view wx:for="{{details}}" wx:key="label" class='option {{index === 0 ? "option1" : ""}} {{item.checked ? "choiceclass" : ""}}+' bindtap="handChoice" data-index="{{index}}">
+  {{item.label}}
+  </view>
 </view>
