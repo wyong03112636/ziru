@@ -18,6 +18,15 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    handleTap() {
+      wx.navigateTo({
+        url: '../../pages/search/search',
+      })
+    },
+    handleTapChooseCity() {
+      wx.navigateTo({
+        url: '../../pages/choose-city/choose-city',
+      })
+    }
   }
 })

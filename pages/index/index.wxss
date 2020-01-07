@@ -3,6 +3,7 @@
 }
 .swiper-wrap image{
   height: 230rpx;
+  width: 100%;
 }
 swiper{
   margin-top: 30rpx;
@@ -26,4 +27,14 @@ swiper{
 }
 .kong-wrap>view>text {
   font-size: 25rpx;
+}
+.image-wrap {
+  display: flex;
+  justify-content: space-between;
+  height: 250rpx;
+}
+.image-wrap image {
+  width: 48%;
+  height: 250rpx;
+  border-radius: 10rpx;
 }

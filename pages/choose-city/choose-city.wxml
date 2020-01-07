@@ -1,0 +1,22 @@
+<!--pages/choose-city/choose-city.wxml-->
+<view class="city-wrap">
+  <view>
+    <text>定位城市</text>
+    <view>
+      <view>
+        <text class="iconfont icon-location"></text>
+        <text>北京</text>
+      </view>
+      <view>
+        <text></text>
+        <text>重新定位</text>
+      </view>
+    </view>
+  </view>
+  <view>
+    <text>已开通城市</text>
+    <view>
+      <text wx:for="{{city}}" wx:key="*this">{{item}}</text>
+    </view>
+  </view>
+</view>
