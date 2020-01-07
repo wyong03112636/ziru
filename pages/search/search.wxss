@@ -1,0 +1,44 @@
+/* pages/search/search.wxss */
+@import '../../resources/icon/iconfont.wxss';
+.search-wrap {
+  padding: 10rpx 15rpx 0;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #eee 1rpx solid;
+}
+.head>text:nth-child(1) {
+  font-size: 35rpx;
+  font-weight: bold;
+}
+.head>input {
+  flex: 1;
+  font-size: 30rpx;
+  padding-left: 20rpx;
+}
+.head>text:nth-child(3) {
+  font-size: 30rpx;
+}
+.around-hot {
+  padding: 0 10rpx;
+}
+.around-hot>view:nth-child(1) {
+  font-size: 35rpx;
+  color: #999;
+  margin: 20rpx 0;
+  border: none;
+}
+.around-hot>view {
+  height: 80rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 30rpx;
+  border-bottom: #eee 1rpx solid;
+}
+.around-hot>view>text:nth-child(2) {
+  margin-left: 20rpx;
+  color: #999;
+}

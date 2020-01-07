@@ -1,6 +1,8 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/choose-city/choose-city",
+    "pages/index/index",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",

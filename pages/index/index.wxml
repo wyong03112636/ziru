@@ -28,6 +28,10 @@
       <text>自如豪宅</text>
     </view>
   </view>
+  <view class="image-wrap">
+    <image src="../../assets/AqFNmIalC3pkDwPAD8627JJk4rdmI4MSkVHv9BzFJOsIJ1500476207652.gif"></image>
+    <image src="../../assets/c5ce94eef01f3a29648318c59425bc315d607c88.gif"></image>
+  </view>
   <list-comp></list-comp>
 </view>
 
