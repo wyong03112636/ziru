@@ -2,5 +2,16 @@
 <view>
   <view wx:for="{{roomsList}}" class="detail">
     <image src='{{item.photo_min}}' class="detailsimg"></image>
+    <view class="detailstext">
+      <text class="detailtitle">{{item.type_text}} · {{item.name}}</text>
+      <view class="detailcontent">
+        <text class="area_type">{{item.area}}㎡ | {{item.bedroom}}室{{item.parlor}}厅</text>
+        <text class="price">{{item.price_unit}}</text>
+      </view>
+      <view class="address">
+        <view class="iconfont icon-location"></view>
+        <text>{{item.subway_station_info}}</text>
+      </view>
+    </view>
   </view>
 </view>

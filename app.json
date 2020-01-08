@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/choose-city/choose-city",
     "pages/index/index",
+    "pages/choose-city/choose-city",
+    
     "pages/search/search"
   ],
   "window": {
