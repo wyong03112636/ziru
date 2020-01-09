@@ -19,7 +19,7 @@
       <view>
         周边热搜
       </view>
-      <view wx:for="{{aroundCount}}" wx:key="*this" bindtap="handleTap">
+      <view wx:for="{{aroundCount}}" wx:key="*this" bindtap="handleTap" data-city="{{item.addr}}">
         <text>{{item.addr}}</text>
         <text>{{item.sub_line}}</text>
       </view>
