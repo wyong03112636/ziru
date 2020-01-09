@@ -1,6 +1,4 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "lalala",
-  "navigationBarTextStyle": "white",
-  "navigationBarBackgroundColor": "#edc"
+  "usingComponents": {
+    "banner":"/components/detail-banner/detail-banner"  }
 }

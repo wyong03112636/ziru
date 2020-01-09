@@ -1,13 +1,9 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/detail/detail"
   ],
   "window": {
-    "navigationBarTitleText": "I love zzm",
-    "navigationBarBackgroundColor": "#dec",
-    "navigationBarTextStyle": "black",
-    "backgroundTextStyle": "light"
+   
   },
   "sitemapLocation": "sitemap.json"
 }

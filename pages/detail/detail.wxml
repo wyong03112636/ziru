@@ -1,11 +1,2 @@
 <!--pages/detail/detail.wxml-->
-<text>{{title}}</text>
-<view id="item-{{id}}"></view>
-<view id="item-1"></view>
-<view wx:for="{{array}}" wx:for-item="idx" wx:for-index="lala" wx:key="*this" >
-  {{idx}}---{{lala}}
-</view>
-<template name="lll">
-{{name1}} {{action}} {{name2}}.
-</template>
-<template is="lll" data="{{...templateData}}"></template>
+<banner></banner>

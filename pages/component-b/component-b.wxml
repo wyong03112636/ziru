@@ -1,6 +1,0 @@
-<!--pages/component-b/component-b.wxml-->
-<text>component-b.wxml</text>
-<view>x:{{num.x}} y:{{num.y}} z:{{num.z}}</view>
-<button bindtap='play'>click</button>
-<button bindtap="handleClick">show/hide</button>
-<coa wx:if="{{isShow}}"></coa>

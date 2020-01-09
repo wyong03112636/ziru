@@ -1,0 +1,43 @@
+<!--pages/components/detail-banner.wxml-->
+<swiper class="banner-box" interval='4000' indicator-dots='true' circular='true'>
+  <swiper-item wx:for="{{imgList}}" wx:key="*this">
+    <image src="{{item}}"></image>
+  </swiper-item>
+</swiper>
+
+<view class="container mBeee">
+  <view class="house-name">{{result.name}}</view>
+  <view class="price-wrap">
+    ￥8888{{result.price_unit}}{{result.price_desc}}
+  </view>
+
+  <view class="pay-type-wrap">
+    <text>服务费另计，详情见付款方式</text>
+    <text class="pay-style">付款方式 ></text>
+  </view>
+
+  <view class="active-wrap">
+    <view class="active-list">
+      <view wx:for="{{activeList}}" wx:key="name">
+        <text class="fontColor85">{{item.name}}</text>
+        <text class="fontColor60">{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="tags-wrap">
+    <text class="fontColor60" wx:for="{{result.tags}}" wx:key="title">{{item.title}}</text>
+  </view>
+
+  <view class="house-tag mBeee">
+    <text>{{result.area}}m</text><view></view>
+    <text>{{result.bedroom}}室{{result.parlor}}厅</text><view></view>
+    <text>{{result.floor}}/{{result.floor_total}}层</text><view></view>
+    <text>{{result.face}}</text>
+  </view>
+  <view class="distance">
+  <icon class="iconfont icon-location" ></icon>
+  {{result.location}}
+  </view>
+</view>
+

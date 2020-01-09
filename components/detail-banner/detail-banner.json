@@ -1,6 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-    "coa":"../component-a/component-a"
+    
   }
 }

@@ -5,15 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    title:'zzmzzm',
-    id:0,
-    array:['a','b','c'],
-    isShow:true,
-    templateData:{
-      name1:'lzx',
-      name2:'zzm',
-      action:'love'
-    }
+    
   },
   
 

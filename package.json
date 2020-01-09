@@ -1,0 +1,23 @@
+{
+  "name": "ziru",
+  "version": "1.0.0",
+  "description": "自如租房",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo Error: no test specified && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/wyong03112636/ziru.git%22.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wyong03112636/ziru.git%22/issues"
+  },
+  "homepage": "https://github.com/wyong03112636/ziru.git%22#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "swiper": "^5.2.1"
+  }
+}
