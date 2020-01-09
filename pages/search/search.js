@@ -26,19 +26,39 @@ Page({
         addr: '六里屯三区',
         sub_line: '小区 - 海淀'
       }
-    ]
+    ],
+    historyCity: [],
+    searchList: []
   },
   handleTapBack() {
    wx.navigateBack();
   },
   handleTap(e) {
-    console.log(e)
+    this.data.historyCity.push(e.currentTarget.dataset.city)
+    this.setData({
+      historyCity: this.data.historyCity
+    })
+  },
+  
+  handleInput(e) {
+    let that = this;
+    wx.request({
+      url: `https://m.ziroom.com/v7/setting/suggestion.json?city_code=110000&query=${e.detail.value}`,
+      success(res) {
+        that.setData({
+          searchList: res.data.data.items
+        })
+      }
+    })
+  },
+  handleDetail(e) {
+    console.log(e.currentTarget.dataset.type)
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**
