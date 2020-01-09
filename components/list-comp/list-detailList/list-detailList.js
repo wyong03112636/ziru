@@ -23,7 +23,7 @@ Component({
         'content-type': 'application/json' // 默认值
       },
       success: (res) => {
-        console.log(res)
+        // console.log(res)
         this.setData({
           roomsList: res.data.data.rooms
         })

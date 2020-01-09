@@ -1,6 +1,6 @@
 <!--components/list-comp/list-detailList/list-detailList.wxml-->
 <view>
-  <view wx:for="{{roomsList}}" class="detail">
+  <view wx:for="{{roomsList}}" class="detail" wx:key="*this">
     <image src='{{item.photo_min}}' class="detailsimg"></image>
   </view>
 </view>
