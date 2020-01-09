@@ -1,9 +1,9 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/detail/detail",
-    "pages/choose-city/choose-city",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/index/index",
+    "pages/choose-city/choose-city"
   ],
   "window": {
     "backgroundTextStyle": "light",

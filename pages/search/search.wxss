@@ -21,10 +21,16 @@
 .head>text:nth-child(3) {
   font-size: 30rpx;
 }
-.around-hot {
+.around-hot  .history-city{
   padding: 0 10rpx;
 }
 .around-hot>view:nth-child(1) {
+  font-size: 35rpx;
+  color: #999;
+  margin: 20rpx 0;
+  border: none;
+}
+.history-city>view:nth-child(1) {
   font-size: 35rpx;
   color: #999;
   margin: 20rpx 0;
@@ -41,4 +47,58 @@
 .around-hot>view>text:nth-child(2) {
   margin-left: 20rpx;
   color: #999;
+}
+.history-city>view:nth-of-type(2) {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.history-city>view:nth-of-type(2)>view {
+  width: 30%;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  background-color: #eee;
+  color: #888;
+  margin-top: 20rpx;
+  margin-right: 25rpx;
+}
+.search-list>view>view>view>image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.search-list>view>view {
+  display: flex;
+  justify-content: space-between;
+  height: 90rpx;
+  border-bottom: solid 1rpx #eee;
+  align-items: center;
+}
+.search-list>view>view>view>view {
+  margin-left: 80rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.search-list>view>view>view>view>text:nth-of-type(1) {
+  font-size: 25rpx;
+  color: orange;
+}
+.search-list>view>view>view>view>text:nth-of-type(2) {
+  font-size: 20rpx;
+  color: #999;
+}
+.search-list>view>view>text {
+  font-size: 25rpx;
+  color: #888;
+}
+.search-list>view {
+  margin-top: 20rpx;
+}
+.search-list>view>view>view {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
 }

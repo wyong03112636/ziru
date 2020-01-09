@@ -1,19 +1,42 @@
 <view class="search-wrap">
   <view class="head">
     <text class="iconfont icon-magnifier"></text>
-    <input auto-focus placeholder="你想住在哪？"></input>
+    <input confirm-type="search" bindinput="handleInput" auto-focus placeholder="你想住在哪？"></input>
     <text bindtap="handleTapBack">取消</text>
   </view>
-  <!-- 搜索历史 -->
-  <view></view>
-  <!-- 周边搜索 -->
-  <view class="around-hot">
-    <view>
-      周边热搜
+  <view wx:if="{{searchList.length === 0}}">
+      <!-- 搜索历史 -->
+    <view class="history-city" wx:if="{{historyCity.length}}">
+      <view>搜索历史</view>
+      <view>
+        <view wx:for="{{historyCity}}" wx:key="*this">
+          <text>{{item}}</text>
+        </view>
+      </view>
     </view>
-    <view wx:for="{{aroundCount}}" wx:key="*this" bindtap="handleTap">
-      <text>{{item.addr}}</text>
-      <text>{{item.sub_line}}</text>
-    </view>
+    <!-- 周边搜索 -->
+    <view class="around-hot">
+      <view>
+        周边热搜
+      </view>
+      <view wx:for="{{aroundCount}}" wx:key="*this" bindtap="handleTap">
+        <text>{{item.addr}}</text>
+        <text>{{item.sub_line}}</text>
+      </view>
+    </view> 
+  </view>
+  <view class="search-list" wx:else>
+      <view wx:for="{{searchList}}" wx:key="*this" data-id="{{item.id}}" bindtap="handleDetail" data-city="{{item.city_code}}" data-type="{{item.type}}">
+          <view>
+            <view>
+               <image src="{{item.icon}}"></image>
+              <view>
+                <text>{{item.name}}</text>
+                <text>{{item.memo}}</text>
+              </view>
+            </view>
+            <text>{{item.housenum}}</text>
+          </view>
+      </view>
   </view>
 </view>
