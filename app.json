@@ -1,14 +1,7 @@
 {
   "pages": [
-<<<<<<< HEAD
-    "pages/detail/detail"
-  ],
-  "window": {
-   
-  },
-  "sitemapLocation": "sitemap.json"
-=======
     "pages/index/index",
+    "pages/detail/detail",
     "pages/choose-city/choose-city",
     "pages/search/search"
   ],
@@ -25,5 +18,4 @@
       "desc": "你的位置信息将用于小程序位置接口的效果展示"
     }
   }
->>>>>>> 21206a486e70935e5d633360f642590eafe70e1c
 }

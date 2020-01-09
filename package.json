@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "ziru",
   "version": "1.0.0",
   "description": "自如租房",
@@ -20,9 +19,5 @@
   "devDependencies": {},
   "dependencies": {
     "swiper": "^5.2.1"
-=======
-  "dependencies": {
-    "weui-miniprogram": "^0.2.1"
->>>>>>> 21206a486e70935e5d633360f642590eafe70e1c
   }
 }
