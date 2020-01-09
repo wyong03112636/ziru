@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Windows
 [Dd]esktop.ini
 Thumbs.db
@@ -12,3 +13,6 @@ $RECYCLE.BIN/
 
 # Node.js
 node_modules/
+=======
+/node_modules
+>>>>>>> 21206a486e70935e5d633360f642590eafe70e1c

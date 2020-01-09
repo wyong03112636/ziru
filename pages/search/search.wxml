@@ -1,0 +1,19 @@
+<view class="search-wrap">
+  <view class="head">
+    <text class="iconfont icon-magnifier"></text>
+    <input auto-focus placeholder="你想住在哪？"></input>
+    <text bindtap="handleTapBack">取消</text>
+  </view>
+  <!-- 搜索历史 -->
+  <view></view>
+  <!-- 周边搜索 -->
+  <view class="around-hot">
+    <view>
+      周边热搜
+    </view>
+    <view wx:for="{{aroundCount}}" wx:key="*this" bindtap="handleTap">
+      <text>{{item.addr}}</text>
+      <text>{{item.sub_line}}</text>
+    </view>
+  </view>
+</view>

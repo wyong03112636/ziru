@@ -1,0 +1,23 @@
+<view class="nav-wrap">
+  <view class="options">
+  <text>合租/整租</text>
+  <view class="iconfont icon-sanjiaoxing"></view>
+  </view>
+  <view class="options">
+  <text>位置</text>
+  <view class="iconfont icon-sanjiaoxing"></view>
+  </view>
+  <view class="options">
+  <text>租金</text>
+  <view class="iconfont icon-sanjiaoxing"></view>
+  </view>
+  <view class="options">
+  <text>筛选</text>
+  <view class="iconfont icon-sanjiaoxing"></view>
+  </view>
+  <view>
+  <view class="iconfont icon-weibiaoti1"></view>
+ 
+  </view>
+
+</view>

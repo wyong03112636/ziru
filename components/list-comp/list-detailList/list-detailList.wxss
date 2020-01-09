@@ -1,0 +1,37 @@
+/* components/list-comp/list-detailList/list-detailList.wxss */
+@import '../../../resources/icon/iconfont.wxss';
+.detail{
+  margin-bottom: 36rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.detailsimg{
+  width: 220rpx;
+  height: 164rpx;
+}
+.detailstext{
+  width: 440rpx;
+  height: 164rpx;
+}
+.detailtitle{
+  font-size: 26rpx;
+}
+.detailcontent{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20rpx;
+  color: #eaba2b;
+}
+.area_type{
+  font-size: 20rpx;
+  color: #bbbbbb;
+}
+.address{
+  display: flex;
+  color: #bbb;
+  font-size: 20rpx;
+}
+.icon-location{
+  font-size: 26rpx;
+  line-height: 46rpx;
+}

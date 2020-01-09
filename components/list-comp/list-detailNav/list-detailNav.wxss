@@ -1,0 +1,25 @@
+/* components/list-comp/list-detailNav/list-detailNav.wxss */
+.dnav-wrap{
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-bottom: 32rpx;
+}
+.option{
+  font-size: 20rpx;
+  background: #fafafa;
+  border-radius: 28rpx;
+  padding:0 20rpx;
+  color: #666;
+}
+.option1{
+  background: #f4f8f7;
+  color:#6bbba0;
+}
+.choiceclass{
+  background: #fd912e;
+  color:#fff;
+}

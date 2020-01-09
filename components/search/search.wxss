@@ -1,0 +1,29 @@
+/* components/search.wxss */
+@import '../../resources/icon/iconfont.wxss';
+.wrap-search{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.wrap-search>text {
+  font-size: 36rpx;
+  color: #151515;
+  width: max-content;
+}
+.wrap-search .icon-magnifier{
+  position: absolute;
+  left: 165rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  top: 5rpx;
+}
+.wrap-search>input {
+  width: 80%;
+  height: 50rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  padding-left: 70rpx;
+  background-color: #eee;
+  border-radius: 50rpx;
+  box-sizing: border-box;
+}

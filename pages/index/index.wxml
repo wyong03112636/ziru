@@ -1,0 +1,50 @@
+<view class="wrap-index">
+  <search></search>
+  <view class="swiper-wrap">
+     <swiper indicator-dots="{{true}}"
+        autoplay="{{true}}" interval="{{3000}}" duration="{{1000}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <image src="{{item}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+  </view>
+  <view class="kong-wrap">
+    <view>
+      <image src="https://webimg.ziroom.com/ac4eeb2d-3103-489d-af60-3a7c6e295090.png"></image>
+      <text>自如友家</text>
+    </view>
+    <view>
+      <image src="https://webimg.ziroom.com/d372ba0a-5e0f-4688-a759-5bad59c05f1f.png"></image>
+      <text>自如整租</text>
+    </view>
+    <view>
+      <image src="https://webimg.ziroom.com/32bc151f-2a6a-4c1b-8192-78b9dcb6b64b.png"></image>
+      <text>业主直租</text>
+    </view>
+    <view>
+      <image src="https://webimg.ziroom.com/22ec3323-f4a4-436d-9671-4530089f0be0.png"></image>
+      <text>自如豪宅</text>
+    </view>
+  </view>
+  <view class="image-wrap">
+    <view>
+      <text>可预签房源精选</text>
+      <text>快人一步, 好房不等人</text>
+    </view>
+    <view>
+      <text>视频体验更精彩</text>
+      <text>足不出户看新屋</text>
+    </view>
+  </view>
+  <list-comp></list-comp>
+</view>
+
+
+
+
+
+
+
+

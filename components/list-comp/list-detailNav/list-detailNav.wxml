@@ -1,0 +1,6 @@
+<!--components/list-comp/list-detailNav/list-detailNav.wxml-->
+<view class="dnav-wrap">
+  <view wx:for="{{details}}" wx:key="label" class='option {{index === 0 ? "option1" : ""}} {{item.checked ? "choiceclass" : ""}}+' bindtap="handChoice" data-index="{{index}}">
+  {{item.label}}
+  </view>
+</view>

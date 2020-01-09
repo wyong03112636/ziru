@@ -1,7 +1,11 @@
 //app.js
 App({
   onLaunch: function () {
+<<<<<<< HEAD
     /* // 展示本地存储能力
+=======
+    // 展示本地存储能力
+>>>>>>> 21206a486e70935e5d633360f642590eafe70e1c
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
@@ -31,10 +35,15 @@ App({
           })
         }
       }
+<<<<<<< HEAD
     }) */
     // console.log('onLaunch')
   },
   
+=======
+    })
+  },
+>>>>>>> 21206a486e70935e5d633360f642590eafe70e1c
   globalData: {
     userInfo: null
   }

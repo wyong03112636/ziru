@@ -13,6 +13,7 @@
       "unicode_decimal": 58910
     },
     {
+<<<<<<< HEAD
       "icon_id": "845791",
       "name": "定位",
       "font_class": "zhizhen",
@@ -20,6 +21,8 @@
       "unicode_decimal": 58957
     },
     {
+=======
+>>>>>>> 21206a486e70935e5d633360f642590eafe70e1c
       "icon_id": "1214900",
       "name": "BBD排序1",
       "font_class": "weibiaoti1",

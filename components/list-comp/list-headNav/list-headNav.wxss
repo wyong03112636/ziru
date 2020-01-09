@@ -1,0 +1,28 @@
+/* components/list-comp/list-compchildren/list-headNav/list-headNav.wxss */
+@import '../../../resources/icon/iconfont.wxss';
+
+.nav-wrap{
+  width: 100%;
+  height: 50rpx;
+  font-size: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.options{
+  display: flex;
+  justify-content: space-between;
+}
+text{
+  line-height: 50rpx;
+  margin-right: 10rpx;
+}
+.iconfont{
+  color: #ccc;
+  line-height: 50rpx;
+  font-size: 16rpx;
+}
+.icon-weibiaoti1{
+  color: #000;
+  font-size: 28rpx;
+  
+}
