@@ -29,8 +29,14 @@
     </view>
   </view>
   <view class="image-wrap">
-    <image src="../../assets/AqFNmIalC3pkDwPAD8627JJk4rdmI4MSkVHv9BzFJOsIJ1500476207652.gif"></image>
-    <image src="../../assets/c5ce94eef01f3a29648318c59425bc315d607c88.gif"></image>
+    <view>
+      <text>可预签房源精选</text>
+      <text>快人一步, 好房不等人</text>
+    </view>
+    <view>
+      <text>视频体验更精彩</text>
+      <text>足不出户看新屋</text>
+    </view>
   </view>
   <list-comp></list-comp>
 </view>

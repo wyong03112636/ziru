@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    city: ['北京', '上海', '深圳', '杭州', '南京', '成都', '武汉', '广州', '天津']
+    city: ['北京', '上海', '深圳', '杭州', '南京', '成都', '武汉', '广州', '天津'],
+    currentCity: '',
   },
 
   /**
@@ -19,7 +20,12 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    wx.getLocation({
+      type: 'wgs84',
+      success(res) {
+        console.log(res)
+      }
+    })
   },
 
   /**
@@ -47,7 +53,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    
   },
 
   /**

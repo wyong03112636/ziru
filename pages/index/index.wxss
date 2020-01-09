@@ -31,10 +31,30 @@ swiper{
 .image-wrap {
   display: flex;
   justify-content: space-between;
-  height: 250rpx;
+  height: 200rpx;
+  margin: 15rpx 0;
 }
-.image-wrap image {
+.image-wrap > view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 48%;
-  height: 250rpx;
   border-radius: 10rpx;
+  align-items: center;
+}
+.image-wrap > view:nth-of-type(1) {
+  background: url(https://image.ziroom.com/g2m1/M00/4B/88/ChAFB1va2qCAZ6HIAADIHw5e7VM840.jpg) center;
+  background-size: cover;
+}
+.image-wrap > view:nth-of-type(2) {
+  background: url(https://image.ziroom.com/g2m1/M00/4B/88/ChAFB1va2qiAdobYAAC1HU0CiAI338.jpg) center;
+  background-size: cover;
+}
+.image-wrap > view > text:nth-of-type(1) {
+  color: #fff;
+  font-size: 30rpx;
+}
+.image-wrap > view > text:nth-of-type(2) {
+  color: #fff;
+  font-size: 25rpx;
 }
