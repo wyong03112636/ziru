@@ -30,7 +30,7 @@ Component({
         this.setData({
           roomsList: res.data.data.rooms
         })
-        console.log(this.data.roomsList[0].price[1][0])
+        console.log(this.data.roomsList[0])
       }
     })
     
