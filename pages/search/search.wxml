@@ -19,14 +19,14 @@
       <view>
         周边热搜
       </view>
-      <view wx:for="{{aroundCount}}" wx:key="*this" bindtap="handleTap" data-city="{{item.addr}}">
+      <view wx:for="{{aroundCount}}" wx:key="*this" bindtap="handleTap" data-citys="{{item.addr}}" data-city="{{item.city_code}}" data-type="{{item.type}}">
         <text>{{item.addr}}</text>
         <text>{{item.sub_line}}</text>
       </view>
     </view> 
   </view>
   <view class="search-list" wx:else>
-      <view wx:for="{{searchList}}" wx:key="*this" data-id="{{item.id}}" bindtap="handleDetail" data-city="{{item.city_code}}" data-type="{{item.type}}">
+      <view wx:for="{{searchList}}" wx:key="*this" data-citys="{{item.name}}" bindtap="handleDetail" data-city="{{item.city_code}}" data-type="{{item.type}}">
           <view>
             <view>
                <image src="{{item.icon}}"></image>

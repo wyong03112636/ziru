@@ -8,23 +8,33 @@ Page({
     aroundCount: [
       {
         addr: '生命科学园',
-        sub_line: '地铁站 - 昌平线'
+        sub_line: '地铁站 - 昌平线',
+        city_code: '110000',
+        type: 3
       },
       {
         addr: '永丰南',
-        sub_line: '地铁站 - 16号线'
+        sub_line: '地铁站 - 16号线',
+        city_code: '110000',
+        type: 3
       },
       {
         addr: '永丰',
-        sub_line: '地铁站 - 16号线'
+        sub_line: '地铁站 - 16号线',
+        city_code: '110000',
+        type: 3
       },
       {
         addr: '海淀北部新区',
-        sub_line: '商圈 - 海淀'
+        sub_line: '商圈 - 海淀',
+        city_code: '110000',
+        type: 3
       },
       {
         addr: '六里屯三区',
-        sub_line: '小区 - 海淀'
+        sub_line: '小区 - 海淀',
+        city_code: '110000',
+        type: 3
       }
     ],
     historyCity: [],
@@ -34,7 +44,7 @@ Page({
    wx.navigateBack();
   },
   handleTap(e) {
-    this.data.historyCity.push(e.currentTarget.dataset.city)
+    this.data.historyCity.push(e.currentTarget.dataset.citys)
     this.setData({
       historyCity: this.data.historyCity
     })
@@ -52,7 +62,13 @@ Page({
     })
   },
   handleDetail(e) {
-    console.log(e.currentTarget.dataset.type)
+    console.log(e)
+    this.data.historyCity.push(e.currentTarget.dataset.city)
+    this.setData({
+      historyCity: this.data.historyCity
+    })
+    // 路由跳转
+    // console.log(e.currentTarget.dataset.type)
   },
   /**
    * 生命周期函数--监听页面加载

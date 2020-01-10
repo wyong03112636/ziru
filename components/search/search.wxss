@@ -6,7 +6,7 @@
   position: relative;
 }
 .wrap-search>text {
-  font-size: 36rpx;
+  font-size: 32rpx;
   color: #151515;
   width: max-content;
 }
