@@ -1,6 +1,6 @@
 <!--components/search.wxml-->
 <view class="wrap-search">
-  <text bindtap="handleTapChooseCity">北京 <text class="iconfont icon-sanjiaoxing"></text></text>
+  <text bindtap="handleTapChooseCity">{{currentCity ? currentCity: '定位中'}} <text class="iconfont icon-sanjiaoxing"></text></text>
   <input bindtap="handleTap" class="weui-input" placeholder="你想住在哪？"/>
   <text class="iconfont icon-magnifier"></text>
 </view>
