@@ -62,11 +62,11 @@ Page({
     })
   },
   handleDetail(e) {
-    console.log(e)
-    this.data.historyCity.push(e.currentTarget.dataset.city)
-    this.setData({
-      historyCity: this.data.historyCity
-    })
+    this.data.historyCity.push(e.currentTarget.dataset.citys)
+    // this.setData({
+    //   historyCity: this.data.historyCity
+    // })
+    // console.log(this.data.historyCity)
     // 路由跳转
     // console.log(e.currentTarget.dataset.type)
   },

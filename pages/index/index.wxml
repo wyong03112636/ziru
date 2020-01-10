@@ -1,5 +1,5 @@
 <view class="wrap-index">
-  <search></search>
+  <search cityName="{{cityName}}"></search>
   <view class="swiper-wrap">
      <swiper indicator-dots="{{true}}"
         autoplay="{{true}}" interval="{{3000}}" duration="{{1000}}">
@@ -38,7 +38,7 @@
       <text>足不出户看新屋</text>
     </view>
   </view>
-  <list-comp></list-comp>
+  <list-comp cityCode="{{cityCode}}"></list-comp>
 </view>
 
 

@@ -5,7 +5,7 @@
     <view>
       <view>
         <text class="iconfont icon-location"></text>
-        <text>北京</text>
+        <text bindtap="handleTaoChooseCity" data-city="{{currentCity}}" data-cityCode="{{'110000'}}">{{currentCity}}</text>
       </view>
       <view>
         <text></text>
@@ -16,7 +16,7 @@
   <view>
     <text>已开通城市</text>
     <view>
-      <text wx:for="{{city}}" wx:key="*this">{{item}}</text>
+      <text wx:for="{{city}}" wx:key="*this" bindtap="handleTaoChooseCity" data-city="{{item.name}}" data-cityCode="{{item.city_code}}">{{item.name}}</text>
     </view>
   </view>
 </view>
