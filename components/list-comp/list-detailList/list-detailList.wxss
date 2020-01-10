@@ -32,13 +32,13 @@
   line-height: 26rpx;
 }
 .price{
-  width: 126rpx;
+  width: 140rpx;
   height: 26rpx;
   line-height: 26rpx;
   display: flex;
 }
 .bg_price{
-  width: 21rpx;
+  width: 20rpx;
   height: 26rpx;
 }
 .address{
