@@ -1,5 +1,6 @@
 {
   "pages": [
+    "components/detail-location/location",
     "pages/index/index"
   ],
   "window": {

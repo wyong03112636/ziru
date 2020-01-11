@@ -11,12 +11,14 @@
     <view class="content">{{item.desc}}</view>
   </view>
   <view class="{{isShow?'res-more':'res-none'}}">
-    <view class="cancel" bindtap="cancel">×</view>
-    <view class="more-title"><text>小区介绍</text></view>
-    <view class="more-item" wx:for="{{list}}" wx:key="index">
-      <view class="item-title">{{item.title}}</view>
-      <view class="item-content">{{item.desc}}</view>
-    </view>
+    <scroll-view scroll-y="true" style="height: 100%;">
+      <view class="cancel" bindtap="cancel">×</view>
+      <view class="more-title"><text>小区介绍</text></view>
+      <view class="more-item" wx:for="{{maxList}}" wx:key="index">
+        <view class="item-title">{{item.title}}</view>
+        <view class="item-content">{{item.desc}}</view>
+      </view>
+    </scroll-view>
   </view>
   <view class="button" bindtap="more">更多小区信息</view>
 </view>

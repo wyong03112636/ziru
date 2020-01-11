@@ -1,7 +1,7 @@
 /* components/resblock/resblock.wxss */
 .title{
   color: #444;
-  margin: 48rpx 0 64rpx;
+  margin: 48rpx 36rpx 64rpx;
   font-size: 36rpx;
 }
 .banner{
@@ -24,6 +24,9 @@
 }
 .res-wrap{
   padding:48rpx 36rpx;
+}
+.res-wrap .title{
+  margin: 48rpx 0 64rpx;
 }
 .list-item{
   display: flex;

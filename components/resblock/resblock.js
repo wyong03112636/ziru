@@ -8,6 +8,7 @@ Component({
   },
   data: {
     list:[],
+    maxList:[],
     content:{},
     isShow:false
   },
@@ -18,6 +19,7 @@ Component({
         url: 'https://m.ziroom.com/resblock/detail?resblock_id=1111027379295',
         success: (result) => {
           this.setData({
+            maxList: result.data.data.intro.data,
             list: result.data.data.intro.data.slice(0, 4),
             content: result.data.data
           })
@@ -27,7 +29,6 @@ Component({
   },
   methods: {
     more:function(){
-      console.log(!this.data.isShow)
       this.setData({
         isShow: !this.data.isShow
       })

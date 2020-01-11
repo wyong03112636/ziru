@@ -1,4 +1,9 @@
 /* components/detail-location/location.wxss */
+.detail-wrap{
+  margin: 0 36rpx;
+  color:#444;
+  font-size: 28rpx;
+}
 .title{
   color: #444;
   margin: 48rpx 0 64rpx;
@@ -43,14 +48,14 @@
 }
 .roommates text{
   display: inline-block;
-  width: 25%;
+  width: 165rpx;
 }
 .roommates view{
   display: inline-block;
 }
 .roommates .price{
   display: inline-block;
-  width: 25%;
+  width:160rpx;
 }
 .roommates .price .price-item{
   width: 20rpx;

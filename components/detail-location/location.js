@@ -28,9 +28,9 @@ Component({
           ))
           this.setData ({
             detail: result.data.data,
-            list:list1
+            list:list1,
+            configList:list1[0]
           })
-          console.log(this.data.list)
         }
       })
     }
