@@ -1,0 +1,29 @@
+<!--components/resblock/resblock.wxml-->
+<cover-image class="banner"></cover-image>
+<view class="res-name">
+  <view class="res-title">{{content.resblock_name}}</view>
+  <text class="res-location">{{content.subway_primary}}</text>
+</view>
+<view class="res-wrap">
+  <view class="title"><text>小区介绍</text></view>
+  <view class="list-item" wx:for="{{list}}" wx:key="index">
+    <view class="sub-title">{{item.title}}</view>
+    <view class="content">{{item.desc}}</view>
+  </view>
+  <view class="{{isShow?'res-more':'res-none'}}">
+    <view class="cancel" bindtap="cancel">×</view>
+    <view class="more-title"><text>小区介绍</text></view>
+    <view class="more-item" wx:for="{{list}}" wx:key="index">
+      <view class="item-title">{{item.title}}</view>
+      <view class="item-content">{{item.desc}}</view>
+    </view>
+  </view>
+  <view class="button" bindtap="more">更多小区信息</view>
+</view>
+<view class="title"><text>在租房源</text></view>
+<view class="title"><text>周边及交通</text></view>
+<cover-image src="http://api.map.baidu.com/staticimage/v2?ak=CB9b776692623d30a148b5c5dc2b75a6&mcode=666666&center=116.403511,39.872127&width=800&height=540&zoom=18&markers={{content.lng}},{{content.lat}}&markerStyles=-1,http://api.map.baidu.com/images/marker_red.png,-1,23,25"></cover-image>
+<view class="sub-wrap">
+  <view class="sub-list" wx:for="{{content.subway}}" wx:key="index">· {{item}}</view>
+</view>
+

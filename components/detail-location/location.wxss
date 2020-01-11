@@ -1,0 +1,64 @@
+/* components/detail-location/location.wxss */
+.title{
+  color: #444;
+  margin: 48rpx 0 64rpx;
+  font-size: 36rpx;
+}
+.content{
+  color: #999;
+  font-size: 32rpx;
+  line-height: 50rpx;
+}
+.config-item{
+  display: inline-block;
+}
+.config-item .text{
+  padding:16rpx;
+}
+.config-item-active .text{
+  color:#ffa000!important;
+}
+.config-icon{
+  width: 48rpx;
+  height: 48rpx;
+}
+.content{
+  margin: 48rpx 0;
+}
+.content-item{
+  display: inline-block;
+  margin: 0 48rpx 60rpx 0;
+}
+.content-item text{
+  color: #999;
+  font-size: 24rpx;
+}
+.roommates{
+  height:110rpx;
+  line-height: 110rpx;
+}
+.roommates .roommates-title{
+  display: inline-block;
+  width: 170rpx;
+}
+.roommates text{
+  display: inline-block;
+  width: 25%;
+}
+.roommates view{
+  display: inline-block;
+}
+.roommates .price{
+  display: inline-block;
+  width: 25%;
+}
+.roommates .price .price-item{
+  width: 20rpx;
+  height: 26rpx;
+}
+.roommates .roommates-horo{
+  text-align: right;
+}
+.roommates .roommates-price{
+  text-align: center;
+}
