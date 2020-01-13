@@ -1,0 +1,9 @@
+<template name="see-all">
+  <block wx:for="{{result}}" wx:key="title" class="pop-wrap">
+    <view class="pop-title">{{item.title}}</view>
+    <view class="pop-sub-title" wx:for="{{item.item}}" wx:key="desc">
+      {{item.desc}}
+      <view class="learn-more" wx:if="{{item.url}}">了解更多></view>
+    </view>
+  </block>
+</template>

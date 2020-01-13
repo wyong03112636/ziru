@@ -1,0 +1,11 @@
+<view class="detail-container">
+  <view class="title">
+    周边及交通
+    <view class="see-more" bindtap="look">查看介绍 ></view>
+  </view>
+</view>
+<cover-image src="http://api.map.baidu.com/staticimage/v2?ak=CB9b776692623d30a148b5c5dc2b75a6&mcode=666666&center=116.403511,39.872127&width=800&height=540&zoom=18&markers={{result.resblock.lng}},{{result.resblock.lat}}&markerStyles=-1,http://api.map.baidu.com/images/marker_red.png,-1,23,25"></cover-image>
+<view class="sub-wrap detail-container" id="list">
+  <view class="sub-list" wx:for="{{result.resblock.subway}}" wx:key="index">· {{item}}</view>
+</view>
+

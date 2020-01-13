@@ -1,0 +1,17 @@
+.pop-subtitle{
+  height: 32rpx;
+  margin-bottom: 24rpx;
+  line-height: 32rpx;
+  font-size: 32rpx;
+}
+.pop-detail{
+  color: #999;
+}
+.pop-item{
+  padding-bottom: 48rpx;
+  margin-bottom: 48rpx;
+  border-bottom: 2rpx #eee solid;
+}
+.pop-wrap .pop-item:last-child{
+  border-bottom:none;
+}

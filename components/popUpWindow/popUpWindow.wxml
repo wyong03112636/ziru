@@ -1,0 +1,28 @@
+<!--从底部弹出的弹窗-->
+<view class="pop-up-box" >
+  <!-- <view class="pop-up-wrap"> -->
+    <view class="pop-up-head">
+      <icon class="pop-up-close" type="cancel" size="23" color="#444" bindtap="close"></icon>
+    </view>
+    <view class="pop-up-container">
+      <import src="/templates/payStyle/payStyle"></import>
+      <import src="/templates/seeAll/seeAll"></import>
+      <import src="/templates/look/look"></import>
+      <import src="/templates/question/question"></import>
+      <block wx:if="{{type==='1'}}">
+        <template is="pay-style"></template>
+      </block>
+      <block wx:if="{{type==='2'}}">
+        <template is="see-all" data="{{result}}"></template>
+      </block>
+      <block wx:if="{{type==='3'}}">
+        <template is="look" data="{{result}}"></template>
+      </block>
+      <block wx:if="{{type >= 3}}">
+        <template is="question" data="{{result,type,questionArr}}"></template>
+      </block>
+    </view>
+  <!-- </view> -->
+  
+</view>
+

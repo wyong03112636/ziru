@@ -1,0 +1,15 @@
+<!--components/detail-serve/detail-serve.wxml-->
+<view class="detail-container">
+  <view class="title">
+    {{result.services.title}}
+    <view class="see-more" bindtap="seeAll">查看全部 ></view>
+  </view>
+  <view class="list">
+    <view class="item" wx:for="{{result.services.detail}}" wx:key="title">
+      <image src="{{item.icon}}"></image>
+      <view >
+        <text >{{item.title}}</text>·{{item.sub_title}}
+      </view>
+    </view>
+  </view>
+</view>

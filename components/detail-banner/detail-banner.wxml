@@ -8,15 +8,44 @@
 <view class="container mBeee">
   <view class="house-name">{{result.name}}</view>
   <view class="price-wrap">
-    ￥8888{{result.price_unit}}{{result.price_desc}}
+    <view class="price-img-wrap">
+      <view 
+        class="price-img" 
+        style="background:url({{result.price[0]}}) no-repeat;background-size:auto 46rpx;background-position:-{{result.price[1][0]*48}}rpx 0"
+      ></view>
+      <view 
+        class="price-img" 
+        style="background:url({{result.price[0]}}) no-repeat;background-size:auto 46rpx;background-position:-{{result.price[1][1]*48}}rpx 0"
+      ></view>
+      <view 
+        class="price-img" 
+        style="background:url({{result.price[0]}}) no-repeat;background-size:auto 46rpx;background-position:-{{result.price[1][2]*48.6}}rpx 0"
+      ></view>
+      <view 
+        wx:if="{{result.price[1].length > 3}}"
+        class="price-img" 
+        style="background:url({{result.price[0]}}) no-repeat;background-size:auto 46rpx;background-position:-{{result.price[1][3]*48.4}}rpx 0"
+      ></view>
+      <view 
+        wx:if="{{result.price[1].length > 4}}"
+        class="price-img" 
+        style="background:url({{result.price[0]}}) no-repeat;background-size:auto 46rpx;background-position:-{{result.price[1][4]*48}}rpx 0"
+      ></view>
+      <view 
+        wx:if="{{result.price[1].length > 5}}"
+        class="price-img" 
+        style="background:url({{result.price[0]}}) no-repeat;background-size:auto 46rpx;background-position:-{{result.price[1][5]*24}}rpx 0"
+      ></view>
+    </view>
+    {{result.price_unit}}（{{result.price_desc}}）
   </view>
 
   <view class="pay-type-wrap">
     <text>服务费另计，详情见付款方式</text>
-    <text class="pay-style">付款方式 ></text>
+    <text class="pay-style" bindtap="clickPayStyle">付款方式 ></text>
   </view>
 
-  <view class="active-wrap">
+  <view class="active-wrap" wx:if="{{activeList.length}}">
     <view class="active-list">
       <view wx:for="{{activeList}}" wx:key="name">
         <text class="fontColor85">{{item.name}}</text>
@@ -25,8 +54,25 @@
     </view>
   </view>
 
+  <block wx:if="{{result.air_report || result.decorate_config}}">
+    <view class="air-wrap">
+      <block wx:if="{{result.air_report}}">
+        <view >
+          <text >{{result.air_report.title}}</text>
+          <text >{{result.air_report.desc}}</text>
+        </view>
+      </block>
+      <block wx:if="{{result.decorate_config}}">
+        <view >
+          <text>{{result.decorate_config.title}}</text>
+          <text>{{result.decorate_config.desc}}</text>
+        </view>
+      </block> 
+    </view>
+  </block>
+
   <view class="tags-wrap">
-    <text class="fontColor60" wx:for="{{result.tags}}" wx:key="title">{{item.title}}</text>
+    <view class="fontColor60" wx:for="{{result.tags}}" wx:key="title">{{item.title}}</view>
   </view>
 
   <view class="house-tag mBeee">
@@ -39,5 +85,14 @@
   <icon class="iconfont icon-location" ></icon>
   {{result.location}}
   </view>
+  <!-- 点击付款方式底部弹出的菜单 -->
+  <!-- <block wx:if="{{ispopUpWindowShow}}"> -->
+    <!-- <pop-up-window bind:closeEvent="close">
+      
+    </pop-up-window> -->
+  <!-- </block> -->
 </view>
+
+
+
 

@@ -9,3 +9,24 @@
   height:200rpx;
   background: #ccf;
 }
+.title{
+  color: #444;
+  margin: 48rpx 0 64rpx;
+  font-size: 36rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detail-container{
+  margin: 0 36rpx;
+  color:#444;
+  font-size: 28rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.see-more{
+  height: 32rpx;
+  width: 148rpx;
+  line-height: 32rpx;
+  color:#999;
+  font-size: 28rpx;
+}

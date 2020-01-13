@@ -1,0 +1,10 @@
+.item{
+  height: 112rpx;
+  line-height: 112rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #eee;
+}
+.item text{
+  color: #ff961e;
+}

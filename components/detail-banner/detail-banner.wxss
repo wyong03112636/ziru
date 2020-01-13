@@ -1,6 +1,6 @@
 /* pages/components/detail-banner.wxss */
-@import '/resources/icon/iconfont.wxss'
-/* 轮播图 */
+@import '/resources/icon/iconfont.wxss';
+
 .fontColor85{
   color:rgba(0,0,0,0.85)
 }
@@ -8,7 +8,7 @@
   color:rgba(0,0,0,0.6)
 }
 .mBeee{
-  margin-bottom: 1px solid #eee;
+  margin-bottom: 2rpx solid #eee;
 }
 .sup{
   font-size: 20rpx;
@@ -20,7 +20,10 @@ image{
   width: 100%;
   height: 100%;
 }
+
+/* 轮播图 */
 .banner-box{
+  position: relative;
   height:562.5rpx;
   -width: 100%;
 }
@@ -38,14 +41,28 @@ image{
   font-size: 28rpx;
 }
 .house-name{
-  height:64rpx;
   margin:40rpx 0 24rpx 0;
   font-size: 44rpx;
   line-height: 64rpx;
 }
+
 .price-wrap{
   font-size: 44rpx;
   line-height: 60rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.price-img-wrap{
+  max-width: 154rpx;
+  height: 46rpx;
+  -display: flex;
+}
+.price-img{
+  -flex:1;
+  display: inline-block;
+  width: 31rpx;
+  height: 100%;
 }
 .pay-type-wrap{
   height: 34rpx;
@@ -70,21 +87,57 @@ image{
 .active-list text:first-child{
   margin-right:16rpx;
 }
+
+.air-wrap{
+  height: 64rpx;
+  padding-bottom:40rpx;
+  display: flex;
+  border-bottom: 2rpx solid #eee;
+}
+.air-wrap view{
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  height: 100%;
+  background: rgba(134,186,123,.1);
+  color: #86ba7b;
+  font-size: 26rpx;
+  padding:0 20rpx;
+  margin-left: 22rpx;
+}
+.air-wrap view:last-child{
+  margin-left: 0;
+}
+.air-wrap text{
+  line-height: 64rpx;
+}
+.air-wrap text:first-child{
+  text-align: left;
+}
+.air-wrap text:last-child{
+  text-align: right;
+}
+
 .tags-wrap{
   margin-top: 40rpx;
+  display: flex;
+  flex-wrap: wrap;
 }
-.tags-wrap text{
+.tags-wrap view{
   height: 26rpx;
+  line-height: 26rpx;
   margin: 0 16rpx 16rpx 0;
   padding:12rpx 20rpx;
   font-size: 26rpx;
   background: rgba(0, 0, 0, 0.03);
   border-radius: 4px;
 }
+
 .house-tag{
   height:110rpx;
   display: flex;
   align-items: center;
+  border-bottom:2rpx solid #eee;
 }
 .house-tag text{
   flex:1;
@@ -108,16 +161,13 @@ image{
   height: 110rpx;
   line-height: 110rpx;
 }
-/* .house-tag text:first-child::before{
-  content: '';
-  width: 0;
-  height: 0;
+
+.explain-title{
+  height: 32rpx;
+  margin-bottom: 40rpx;
 }
-.house-tag text::before{
-  content: '';
-  width: 2rpx;
-  height: 30rpx;
-  background: #444;
-  display: inline-block;
-} */
+.explain-content view{
+  color: #999;
+  margin-bottom: 24rpx;
+}
 

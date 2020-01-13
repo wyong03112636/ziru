@@ -1,0 +1,62 @@
+<template name="pay-style">
+  <view class="pay-style-title">付款方式</view>
+    <view class="pay-list">
+      <view class="pay-item">
+        <view class="pay-text">
+          <text class="pay-type">月付</text>
+          <view>￥3030元/月</view>
+        </view>
+        <view class="pay-desc">
+          <text >押金：￥3030元，</text>
+          <text >服务费：￥3636元/年</text>
+        </view>
+      </view>
+      <view class="pay-item">
+        <view class="pay-text">
+          <text class="pay-type">季付</text>
+          <view>￥2890元/月</view>
+        </view>
+        <view class="pay-desc">
+          <text >押金：￥2890元，</text>
+          <text >服务费：￥3468元/年</text>
+        </view>
+      </view>
+      <view class="pay-item">
+        <view class="pay-text">
+          <text class="pay-type">半年付</text>
+
+          <view>￥2890元/月</view>
+        </view>
+        <view class="pay-desc">
+          <text >押金：￥2890元，</text>
+          <text >服务费：￥3295元/年</text>
+        </view>
+      </view>
+      <view class="pay-item">
+        <view class="pay-text">
+          <text class="pay-type">年付</text>
+          <view>￥2890元/月</view>
+        </view>
+        <view class="pay-desc">
+          <text >押金：￥2890元，</text>
+          <text >服务费：￥2774元/年</text>
+        </view>
+      </view>
+      <view class="pay-item">
+        <view class="pay-text">
+          <text class="pay-type">自如客专享分期</text>
+          <view>￥2890元/月</view>
+        </view>
+        <view class="pay-desc">
+          <text >押金：￥2890元，</text>
+          <text >服务费：￥2774元/年</text>
+        </view>
+      </view>
+    </view>
+    <view class="explain-title">说明</view>
+    <view class="explain-content">
+      <view >1、解约时，未发生的租金和服务费将按日结算；</view>
+      <view >2、押金及剩余合同金额将于办理解约后3个工作日内（不含退租当天）退还给您，请于【App-我的合同】确认退款金额，于【App-钱包】申请提现，退款将提现至银行账户；若退租方式为“签约3天不满意，无理由换租”，通过微信、支付宝付款的用户，退款将原路退回至支付账户；白条支付、分期支付或银行卡快捷支付的，退款将退还至自如钱包；</view>
+      <view>3、原则上只能将退款提现至签约人银行账户，如要提现至其他账户，需符合自如特殊提现规则，并提供相应证明文件；</view>
+    </view>
+</template>
