@@ -23,3 +23,82 @@
   background: #fd912e;
   color:#fff;
 }
+
+/*list*/
+
+
+/* components/list-comp/list-detailList/list-detailList.wxss */
+@import '../../../resources/icon/iconfont.wxss';
+.detail{
+  margin-bottom: 36rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.detailsimg{
+  width: 220rpx;
+  height: 164rpx;
+  
+}
+.detailstext{
+  width: 440rpx;
+  height: 164rpx;
+}
+.detailtitle{
+  font-size: 26rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  margin-bottom: 15rpx;
+}
+.detailcontent{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20rpx;
+  color: #eaba2b;
+  height: 26rpx;
+}
+.area_type{
+  font-size: 20rpx;
+  color: #bbbbbb;
+  line-height: 26rpx;
+}
+.price{
+  width: 140rpx;
+  height: 26rpx;
+  line-height: 26rpx;
+  display: flex;
+}
+.bg_price{
+  width: 20rpx;
+  height: 26rpx;
+}
+.address{
+  display: flex;
+  color: #bbb;
+  font-size: 20rpx;
+  height: 26rpx;
+  margin: 18rpx 0;
+}
+.icon-location{
+  font-size: 20rpx;
+  line-height: 26rpx;
+}
+.addresstext{
+  line-height: 26rpx;
+}
+.advantage{
+  display: flex;
+}
+.ad1,.ad2,.ad3{
+  width:94rpx;
+  height: 28rpx;
+  font-size: 18rpx; 
+  color: #bbb;
+  text-align: center;
+  line-height: 28rpx;
+  border: #bbb solid 2rpx;
+}
+.ad1{
+  background: #f3f9f7;
+  color: #89baa9;
+  
+}

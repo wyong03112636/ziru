@@ -1,6 +1,6 @@
 <!--components/list-comp/list-detailList/list-detailList.wxml-->
 <view>
-  <view wx:for="{{roomsList}}" class="detail" wx:key="id" bindtap="handleLinkTodetail" data-id="{{item.id}}">
+  <view wx:for="{{roomsList}}" wx:for-item="item" class="detail" wx:key="id" bindtap="handleLinkTodetail" data-id="{{item.id}}">
     <image src='{{item.photo_min}}' class="detailsimg"></image>
     <view class="detailstext">
       <view class="detailtitle">{{item.type_text}} · {{item.name}}</view>
