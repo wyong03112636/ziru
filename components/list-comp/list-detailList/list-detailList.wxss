@@ -8,6 +8,7 @@
 .detailsimg{
   width: 220rpx;
   height: 164rpx;
+  
 }
 .detailstext{
   width: 440rpx;

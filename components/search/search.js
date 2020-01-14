@@ -22,7 +22,7 @@ Component({
       type: 'wgs84',
       success(res) {
         if(!that.data._flag) {
-          console.log(1)
+          
           that.curCity(res.longitude, res.latitude)
         }
       }
