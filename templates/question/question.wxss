@@ -1,0 +1,14 @@
+.pop-title{
+  line-height: 64rpx;
+  margin: 48rpx 0 64rpx 0;
+  font-size: 48rpx;
+  height: auto;
+}
+.pop-detail{
+  color: #444;
+  font-size: 28rpx;
+  line-height: 48rpx;
+}
+.pop-wrap .pop-detail:last-child{
+  margin-bottom: 0;
+}

@@ -1,0 +1,36 @@
+.pay-style-title{
+  height: 64rpx;
+  line-height: 64rpx;
+  margin: 48rpx 0 64rpx 0;
+  font-size: 48rpx;
+}
+.pay-list{
+  margin-bottom: 40rpx;
+  font-size: 28rpx;
+}
+.pay-item{
+  border-bottom: #eee 2rpx solid;
+  margin-bottom: 40rpx;
+}
+.pay-text{
+  height: 33rpx;
+  line-height: 33rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.pay-type{
+  font-size: 32rpx;
+}
+.pay-desc{
+  height: 33rpx;
+  margin: 24rpx 0 40rpx 0;
+  display: flex;
+}
+.pay-desc text{
+  max-width: 306rpx;
+  min-width: 266rpx;
+  height: 33rpx;
+  line-height: 33rpx;
+  font-family: PingFangSC-Light;
+  color: #999;
+}

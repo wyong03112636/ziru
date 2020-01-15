@@ -1,0 +1,8 @@
+<template name="question">
+  <view class="pop-wrap">
+    <view class="pop-title">{{result.content[type-4].title}}</view>
+    <view class="pop-detail" wx:for="{{questionArr[type-4]}}" wx:key="index">
+      {{item}}
+    </view>
+  </view>
+</template>

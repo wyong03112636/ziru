@@ -1,0 +1,27 @@
+@import '/templates/payStyle/payStyle';
+@import '/templates/seeAll/seeAll';
+@import '/templates/look/look';
+@import '/templates/question/question';
+.pop-up-box{
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+.pop-up-head{
+  position: fixed;
+  width: 100%;
+  height: 88rpx;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+.pop-up-container{
+  position: absolute;
+  left: 0;top: 88rpx;
+  padding:0 36rpx 0;
+  background: #fff;
+}
+.pop-up-close{
+  margin: 0 24rpx;
+}

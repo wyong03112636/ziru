@@ -1,25 +1,45 @@
 // pages/detail/detail.js
+import _ from 'underscore'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    
+    // id:null,
+    result:null,
+    top:0
   },
   
-
+  onPageScroll:_.throttle(function(ev){
+    this.setData({
+      top:ev.scrollTop
+    })
+  },2000),
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
+    // console.log(options)
+    wx.request({
+      url: `https://m.ziroom.com/wap/detail/room.json?city_code=110000&id=${options.id}`,
+      success:res=>{
+        this.setData({
+          result:res.data.data
+        })
+      }
+    }
+    )
+    /* this.setData({
+      id:options.id
+    }) */
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady: function (options) {
 
   },
 

@@ -18,6 +18,7 @@
   "homepage": "https://github.com/wyong03112636/ziru.git%22#readme",
   "devDependencies": {},
   "dependencies": {
-    "swiper": "^5.2.1"
+    "swiper": "^5.2.1",
+    "underscore": "^1.9.2"
   }
 }

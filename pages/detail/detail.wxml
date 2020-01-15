@@ -1,2 +1,8 @@
 <!--pages/detail/detail.wxml-->
-<banner></banner>
+<block wx:if="{{result}}">
+  <banner result="{{result}}"></banner>
+  <serve  result="{{result}}"></serve>
+  <traffic result="{{result}}"></traffic>
+  <question result="{{result}}"></question>
+</block>
+

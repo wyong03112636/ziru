@@ -1,0 +1,19 @@
+/* components/detail-serve/detail-serve.wxss */
+.item{
+  height: 88rpx;
+  margin-bottom: 60rpx;
+  display: flex;
+}
+.item image{
+  width: 88rpx;
+  height: 88rpx;
+  margin-right: 56rpx;
+}
+.item view{
+  height: 100%;
+  flex:1;
+}
+.item view text{
+  line-height: 88rpx;
+  color: #999;
+}

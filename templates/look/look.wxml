@@ -1,0 +1,13 @@
+<template name="look">
+  <view class="pop-wrap">
+    <view class="pop-title">周边及交通</view>
+    <view class="pop-item">
+      <view class="pop-subtitle">周边介绍</view>
+      <view class="pop-detail">{{result.around}}</view>
+    </view>
+    <view class="pop-item">
+      <view class="pop-subtitle">交通介绍</view>
+      <view class="pop-detail">{{result.traffic}}</view>
+    </view>
+  </view>
+</template>

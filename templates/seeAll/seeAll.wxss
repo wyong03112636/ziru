@@ -1,0 +1,22 @@
+.pop-title{
+  height: 64rpx;
+  line-height: 64rpx;
+  margin: 48rpx 0 64rpx 0;
+  font-size: 48rpx;
+}
+.pop-sub-title{
+  color: #444;
+  padding: 40rpx 0;
+  line-height: 43rpx;
+  font-size: 32rpx;
+  border-bottom: 1px solid #eee;
+}
+.learn-more{
+  height: 28rpx;
+  margin-top: 28rpx;
+  line-height: 28rpx;
+  color: #ff961e;
+}
+.pop-wrap .pop-sub-title:last-child{
+  margin-bottom: 0;
+}

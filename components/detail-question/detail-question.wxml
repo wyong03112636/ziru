@@ -1,0 +1,7 @@
+<view class="detail-container">
+  <view class="title">{{result.questions.title}}</view>
+  <view class="item" wx:for="{{result.questions.content}}" wx:key="title">
+    {{item.title}}
+    <text bindtap="see" data-itemId="{{index+4}}">查看</text>
+  </view>
+</view>

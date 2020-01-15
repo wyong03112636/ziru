@@ -1,0 +1,14 @@
+.sub-wrap{
+  padding: 48rpx 0;
+}
+.sub-wrap view:last-child{
+  margin-bottom: 0;
+}
+.sub-list{
+  font-size: 28rpx;
+  color: #444;
+  margin-bottom: 48rpx;
+}
+cover-image{
+  height: 338rpx;
+}

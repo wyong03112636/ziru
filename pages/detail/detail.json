@@ -1,4 +1,8 @@
 {
   "usingComponents": {
-    "banner":"/components/detail-banner/detail-banner"  }
+    "banner":"/components/detail-banner/detail-banner",
+    "serve":"/components/detail-serve/detail-serve",
+    "traffic":"/components/detail-traffic/detail-traffic",
+    "question":"/components/detail-question/detail-question"
+    }
 }
