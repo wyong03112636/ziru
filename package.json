@@ -19,6 +19,6 @@
   "devDependencies": {},
   "dependencies": {
     "swiper": "^5.2.1",
-    "underscore": "^1.9.2"
+    "underscore": "^1.12.1"
   }
 }
